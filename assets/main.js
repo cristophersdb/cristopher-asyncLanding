@@ -3,12 +3,14 @@ const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCWBSxb_47VfQGA
 
 const content = null || document.getElementById('content');
 
+
+
 const options = {
     method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '61923c2519msh53d44a0460fd496p1a1293jsn879d94d40a75',
-		'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
-	}
+    headers: {
+        'X-RapidAPI-Key': '61923c2519msh53d44a0460fd496p1a1293jsn879d94d40a75',
+        'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
+    }
 };
 
 async function fetchData(urlApi) {
@@ -32,10 +34,12 @@ async function fetchData(urlApi) {
             </div>
         </div>
         
-        `).slice(0,2).join('')}
+        `).slice(0, 2).join('')}
         `;
         content.innerHTML = view;
     } catch (error) {
         console.log(error);
     }
 })();
+
+
